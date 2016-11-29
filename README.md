@@ -6,7 +6,7 @@ data-tex-styles allows you to "weave" 3D scans obtained from RGBD sensors using 
 
 ## Installation
 
-The software was developed using [http://openframeworks.cc](openFrameworks) 0.8.4 and quickly ported to 0.9.8 on November 29 2016. It relies on the following addons:
+The software was developed using [openFrameworks](http://openframeworks.cc) 0.8.4 and quickly ported to 0.9.8 on November 29 2016. It relies on the following addons:
 
 * ofxKinect
 * [ofxUI](https://github.com/rezaali/ofxUI) [deprecated now]
