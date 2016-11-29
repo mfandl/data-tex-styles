@@ -1,6 +1,6 @@
 ## Synopsis
 
-data-tex-style allows you to "weave" 3D scans obtained from RGBD sensors using textile design patterns. It is the result of collaboration of Zuzana Zmateková and Matej Fandl. See it in action [here](https://www.youtube.com/watch?v=zAPDYh8-FzM).
+data-tex-styles allows you to "weave" 3D scans obtained from RGBD sensors using textile design patterns. It is the result of collaboration of Zuzana Zmateková and Matej Fandl. See it in action [here](https://www.youtube.com/watch?v=zAPDYh8-FzM).
 
 ![data-text-styles screenshot](screenshot.png)
 
