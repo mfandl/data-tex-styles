@@ -7,19 +7,8 @@ void ofApp::setup(){
     loadColorSetups();
     
     buildPatternArray();
-    
-    useKinect = false;
-    
-    if (useKinect) {
-        kinect.setRegistration(true);
-        kinect.init();
-        kinect.open();
-        kinect.setCameraTiltAngle(0);
-    } else {
-        string path = "682";
-        
-        loadFromFile(path);
-    }
+    string path = "682";
+    loadFromFile(path);
     
     ofEnableSmoothing();
     
@@ -29,9 +18,7 @@ void ofApp::setup(){
 
 
 //--------------------------------------------------------------
-void ofApp::update(){
-    kinect.update();
-}
+void ofApp::update(){}
 
 //--------------------------------------------------------------
 void ofApp::draw(){
@@ -330,15 +317,15 @@ void ofApp::patternFromString(string patternString) {
 }
 
 ofColor ofApp::getColorAt(int x, int y) {
-    return useKinect ? kinect.getColorAt(x, y) : colors[x][y];
+    return colors[x][y];
 }
 
 ofVec3f ofApp::getWorldCoordinateAt(int x, int y) {
-    return useKinect ? kinect.getWorldCoordinateAt(x, y) : vertices[x][y];
+    return vertices[x][y];
 }
 
 float ofApp::getDistanceAt(int x, int y) {
-    return useKinect ? kinect.getDistanceAt(x, y) : vertices[x][y].z;
+    return vertices[x][y].z;
 }
 
 void ofApp::incrementZBy(int x, int y, float value) {

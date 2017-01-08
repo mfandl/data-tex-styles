@@ -1,7 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxKinect.h"
 #include "ofxUI.h"
 #include "mpUtils.hpp"
 #include "ColorSetup.hpp"
@@ -12,8 +11,6 @@ const int pointCloudHeight = 480;
 class ofApp : public ofBaseApp {
 
 public:
-    
-    ofxKinect kinect;
     ofEasyCam camera;
     
 	void setup();
@@ -40,8 +37,6 @@ private:
     
     ofVec3f vertices[pointCloudWidth][pointCloudHeight];
     ofColor colors[pointCloudWidth][pointCloudHeight];
-    
-    bool useKinect = false;
     
     int pattern_dimensions_max[2] = {20, 20};
     int pattern_dimensions[2] = {pattern_dimensions_max[0], pattern_dimensions_max[1]};
